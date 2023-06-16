@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Chistesitos</title>
+</head>
+
+<body>
+    <label><span span id="chiste">Hola</span></label>
+    <br></br>
+    <input id="buttonChiste" onclick="onclickButton()" type="button" value="Nuevo Chiste">
+  
+</body>
+
+
+
+<script>
+    
+
+    let arregloChistes = ["Me sacaron del grupo de WhatsApp de paracaidismo. Se ve que no caía bien.",
+        "¿Cuál es el colmo de un peluquero? Descubrir que en la vida nada es permanente.",
+        "¿Sabes cuánta leche da una vaca en su vida? Pues la misma que en bajada.",
+        "¿Qué le dice un jardinero a otro? Seamos felices mientras podamos." ];
+
+
+    function onclickButton(){
+   
+
+        let chisteSeleccionado = Math.floor(Math.random() * arregloChistes.length);        
+        document.getElementById("chiste").innerHTML = arregloChistes[chisteSeleccionado];
+        
+    }
+
+    onclickButton();
+
+
+</script>
+
+</html>
